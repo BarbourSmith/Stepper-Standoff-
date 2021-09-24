@@ -8,6 +8,31 @@
     "topLevel": true,
     "allAtoms": [
         {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.3037433155080214,
+            "y": 0.25572519083969464,
+            "uniqueID": 398378,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/512301/847289Difference"
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": -1
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": -2
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ]
+        },
+        {
             "atomType": "Difference",
             "name": "Difference",
             "x": 0.4663101604278075,
@@ -20,7 +45,7 @@
                 },
                 {
                     "name": "geometry1",
-                    "ioValue": "atoms/512301/710925GitHubMolecule"
+                    "ioValue": "atoms/512301/398378Move"
                 }
             ]
         },
@@ -894,6 +919,13 @@
     ],
     "allConnectors": [
         {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry1",
+            "ap2Primary": false,
+            "ap1ID": 398378,
+            "ap2ID": 969036
+        },
+        {
             "ap1Name": "Geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
@@ -908,18 +940,18 @@
             "ap2ID": 847289
         },
         {
-            "ap1Name": "Geometry",
-            "ap2Name": "geometry1",
-            "ap2Primary": false,
-            "ap1ID": 710925,
-            "ap2ID": 969036
-        },
-        {
             "ap1Name": "geometry",
             "ap2Name": "geometry2",
             "ap2Primary": false,
             "ap1ID": 847289,
             "ap2ID": 969036
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 847289,
+            "ap2ID": 398378
         },
         {
             "ap1Name": "Geometry",
