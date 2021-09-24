@@ -8,10 +8,71 @@
     "topLevel": true,
     "allAtoms": [
         {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.4663101604278075,
+            "y": 0.29770992366412213,
+            "uniqueID": 969036,
+            "ioValues": [
+                {
+                    "name": "geometry2",
+                    "ioValue": "atoms/512301/847289Difference"
+                },
+                {
+                    "name": "geometry1",
+                    "ioValue": "atoms/512301/710925GitHubMolecule"
+                }
+            ]
+        },
+        {
+            "atomType": "GitHubMolecule",
+            "name": "Honeycomb",
+            "x": 0.11443850267379678,
+            "y": 0.5458015267175573,
+            "uniqueID": 710925,
+            "projectID": "409207341",
+            "ioValues": [
+                {
+                    "name": "Number Y",
+                    "ioValue": 5
+                },
+                {
+                    "name": "Diameter",
+                    "ioValue": 10
+                },
+                {
+                    "name": "Spacing",
+                    "ioValue": 2
+                },
+                {
+                    "name": "Number X",
+                    "ioValue": 5
+                }
+            ],
+            "simplify": false
+        },
+        {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.3401069518716578,
+            "y": 0.5343511450381679,
+            "uniqueID": 847289,
+            "ioValues": [
+                {
+                    "name": "geometry2",
+                    "ioValue": "atoms/512301/710925GitHubMolecule"
+                },
+                {
+                    "name": "geometry1",
+                    "ioValue": "atoms/512301/284951Move"
+                }
+            ]
+        },
+        {
             "atomType": "Molecule",
             "name": "Plastic",
-            "x": 0.32210834553440704,
-            "y": 0.3053435114503817,
+            "x": 0.6213903743315508,
+            "y": 0.17557251908396945,
             "uniqueID": 324326,
             "ioValues": [],
             "topLevel": false,
@@ -249,10 +310,35 @@
             "simplify": false
         },
         {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.27914438502673794,
+            "y": 0.7748091603053435,
+            "uniqueID": 284951,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/512301/710925GitHubMolecule"
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 4
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ]
+        },
+        {
             "atomType": "Group",
             "name": "Group",
-            "x": 0.6156661786237189,
-            "y": 0.29007633587786263,
+            "x": 0.8342245989304813,
+            "y": 0.26717557251908397,
             "uniqueID": 497775,
             "ioValues": [
                 {
@@ -268,8 +354,8 @@
         {
             "atomType": "Molecule",
             "name": "Headers",
-            "x": 0.3792093704245974,
-            "y": 0.6145038167938931,
+            "x": 0.6096256684491979,
+            "y": 0.7175572519083969,
             "uniqueID": 723646,
             "ioValues": [],
             "topLevel": false,
@@ -302,8 +388,8 @@
                 {
                     "atomType": "Molecule",
                     "name": "Header",
-                    "x": 0.19985358711566617,
-                    "y": 0.450381679389313,
+                    "x": 0.1925133689839572,
+                    "y": 0.4427480916030534,
                     "uniqueID": 995726,
                     "ioValues": [],
                     "topLevel": false,
@@ -750,10 +836,36 @@
             "simplify": false
         },
         {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.8342245989304813,
+            "y": 0.5229007633587786,
+            "uniqueID": 513967,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.9853587115666179,
+            "y": 0.5,
+            "uniqueID": 517973,
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "atoms/512301/513967Circle"
+                }
+            ]
+        },
+        {
             "atomType": "Difference",
             "name": "Difference",
-            "x": 0.5893118594436311,
-            "y": 0.7175572519083969,
+            "x": 0.7935828877005348,
+            "y": 0.8473282442748092,
             "uniqueID": 189239,
             "ioValues": [
                 {
@@ -769,8 +881,8 @@
         {
             "atomType": "Stl",
             "name": "Stl",
-            "x": 0.7181551976573939,
-            "y": 0.648854961832061,
+            "x": 0.9080213903743315,
+            "y": 0.8358778625954199,
             "uniqueID": 100861,
             "ioValues": [
                 {
@@ -778,22 +890,37 @@
                     "ioValue": "atoms/512301/189239Difference"
                 }
             ]
-        },
-        {
-            "atomType": "Output",
-            "name": "Output",
-            "x": 0.9853587115666179,
-            "y": 0.5,
-            "uniqueID": 517973,
-            "ioValues": [
-                {
-                    "name": "number or geometry",
-                    "ioValue": "atoms/512301/497775Group"
-                }
-            ]
         }
     ],
     "allConnectors": [
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 710925,
+            "ap2ID": 284951
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "geometry2",
+            "ap2Primary": false,
+            "ap1ID": 710925,
+            "ap2ID": 847289
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "geometry1",
+            "ap2Primary": false,
+            "ap1ID": 710925,
+            "ap2ID": 969036
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry2",
+            "ap2Primary": false,
+            "ap1ID": 847289,
+            "ap2ID": 969036
+        },
         {
             "ap1Name": "Geometry",
             "ap2Name": "3D shape 2",
@@ -810,10 +937,10 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
+            "ap2Name": "geometry1",
             "ap2Primary": false,
-            "ap1ID": 497775,
-            "ap2ID": 517973
+            "ap1ID": 284951,
+            "ap2ID": 847289
         },
         {
             "ap1Name": "Geometry",
@@ -828,6 +955,13 @@
             "ap2Primary": false,
             "ap1ID": 723646,
             "ap2ID": 189239
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 513967,
+            "ap2ID": 517973
         },
         {
             "ap1Name": "geometry",
